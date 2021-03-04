@@ -1,0 +1,519 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.top {
+  position: relative;
+  align-items: center;
+  background-color: transparent; }
+  .top::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    left: 165px;
+    width: 45%;
+    height: 80px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    z-index: 1; }
+  .top img {
+    width: 169px;
+    height: 89px;
+    transition: 0.3s; }
+    .top img:hover {
+      transform: scale(1.2);
+      /* Equal to scaleX(2) scaleY(0.5) */ }
+  .top ul {
+    z-index: 1; }
+    .top ul li {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-left: 29px;
+      margin-right: 29px; }
+      .top ul li a {
+        font-family: "Poppins", Sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        color: #17252A !important;
+        transition: 0.3s; }
+        .top ul li a:hover {
+          transform: scale(1.2);
+          /* Equal to scaleX(2) scaleY(0.5) */
+          color: #3AAFA9 !important; }
+  .top .active {
+    color: #3AAFA9 !important; }
+
+.Front-page {
+  margin-bottom: 70px;
+  position: relative;
+  background: linear-gradient(90deg, #BBB8BB, #74706F); }
+  .Front-page .parallax {
+    background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(/image/1_PcOOLbgE1nZgS4gGS7p1qg.jpg) repeat fixed 100%;
+    background-size: cover;
+    height: 100vh; }
+    .Front-page .parallax .content {
+      text-align: center;
+      position: absolute;
+      top: 35%;
+      left: 20%;
+      z-index: 1; }
+      .Front-page .parallax .content h1 {
+        color: #FFFFFF;
+        font-family: "Uncial Antiqua", Sans-serif;
+        font-size: 2.8rem;
+        font-weight: 600;
+        letter-spacing: 1.6px; }
+      .Front-page .parallax .content p {
+        color: #EFDFDF;
+        font-family: "Poppins", Sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1.3px; }
+      .Front-page .parallax .content button {
+        font-family: "Poppins", Sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: #3AAFA9;
+        padding: 8px 25px;
+        border-radius: 4px;
+        color: #ffffff;
+        border: 0px; }
+        .Front-page .parallax .content button:hover {
+          background: #2B7A78; }
+      .Front-page .parallax .content i {
+        margin-left: 8px;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 400; }
+  .Front-page .line {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    background: transparent; }
+    .Front-page .line .line-1 {
+      z-index: 15;
+      opacity: 0.5; }
+    .Front-page .line .line-2 {
+      z-index: 10;
+      opacity: 0.7; }
+    .Front-page .line .line-3 {
+      z-index: 5; }
+    .Front-page .line .wave {
+      position: absolute;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background-repeat: repeat no-repeat;
+      background-position: 0 bottom;
+      transform-origin: center bottom; }
+    .Front-page .line .wavel {
+      background-size: 50% 80px; }
+    .Front-page .line .wave2 {
+      background-size: 50% 100px;
+      animation: animate 12s linear infinite; }
+    .Front-page .line .wave3 {
+      background-size: 50% 80px;
+      animation: animate 18s linear infinite; }
+@keyframes animate {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1); }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.5); }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1); } }
+  @media screen and (max-width: 480px) {
+    .Front-page .parallax {
+      position: relative;
+      background-position: center;
+      height: 55vh; }
+      .Front-page .parallax .content {
+        position: absolute;
+        top: 20%;
+        left: 0%; }
+        .Front-page .parallax .content h1 {
+          font-size: 20px; }
+        .Front-page .parallax .content p {
+          font-size: 16px; }
+        .Front-page .parallax .content button {
+          font-size: 12px; } }
+
+.footer {
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2; }
+  .footer .row {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .footer .img-footer {
+    text-align: center; }
+    .footer .img-footer img {
+      width: 169px;
+      height: 89px; }
+  .footer .widget-title {
+    position: relative;
+    left: 20px;
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.5;
+    text-transform: uppercase; }
+    .footer .widget-title::before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 20px;
+      left: -20px;
+      background-color: #3AAFA9; }
+  .footer #ocean_custom_menu-5 {
+    position: relative; }
+    .footer #ocean_custom_menu-5 ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-top: 20px; }
+      .footer #ocean_custom_menu-5 ul li {
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 15px;
+        padding: 0;
+        border: 0; }
+        .footer #ocean_custom_menu-5 ul li a {
+          text-decoration: none;
+          color: #4a4a4a;
+          transition: 0.3;
+          font-size: 14px;
+          font-family: Poppins; }
+          .footer #ocean_custom_menu-5 ul li a:hover {
+            color: #3AAFA9; }
+  .footer #ocean_contact_info-6 i {
+    padding: 15px 15px;
+    border: 1px solid #17252a;
+    color: #3AAFA9;
+    font-size: 12px; }
+  .footer #ocean_contact_info-6 ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    list-style: none; }
+    .footer #ocean_contact_info-6 ul li {
+      display: flex;
+      justify-content: start;
+      width: 100%;
+      margin-top: 25px; }
+      .footer #ocean_contact_info-6 ul li:hover {
+        color: #3AAFA9; }
+      .footer #ocean_contact_info-6 ul li .oceanwp-info-wrap {
+        padding-left: 15px; }
+        .footer #ocean_contact_info-6 ul li .oceanwp-info-wrap .oceanwp-contact-text {
+          line-height: 18px;
+          display: block; }
+        .footer #ocean_contact_info-6 ul li .oceanwp-info-wrap .oceanwp-contact-title {
+          color: #17252A;
+          font-weight: bold;
+          line-height: 1.4; }
+      .footer #ocean_contact_info-6 ul li a {
+        font-family: Poppins;
+        text-decoration: none;
+        color: #4a4a4a;
+        transition: 0.3; }
+        .footer #ocean_contact_info-6 ul li a:hover {
+          color: #3AAFA9; }
+  .footer #ocean_social-3 ul {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .footer #ocean_social-3 ul i {
+      color: #17252a; }
+    .footer #ocean_social-3 ul .oceanwp-facebook {
+      border: 1px solid #17252a;
+      transition: 0.3s; }
+      .footer #ocean_social-3 ul .oceanwp-facebook:hover {
+        border: 1px solid #3B5998; }
+        .footer #ocean_social-3 ul .oceanwp-facebook:hover i {
+          color: #3B5998; }
+    .footer #ocean_social-3 ul .oceanwp-instagram {
+      border: 1px solid #17252a;
+      transition: 0.3s; }
+      .footer #ocean_social-3 ul .oceanwp-instagram:hover {
+        border: 1px solid #405DE6; }
+        .footer #ocean_social-3 ul .oceanwp-instagram:hover i {
+          color: #405DE6; }
+    .footer #ocean_social-3 ul .oceanwp-youtube {
+      border: 1px solid #17252a;
+      transition: 0.3s; }
+      .footer #ocean_social-3 ul .oceanwp-youtube:hover {
+        border: 1px solid red; }
+        .footer #ocean_social-3 ul .oceanwp-youtube:hover i {
+          color: red; }
+    .footer #ocean_social-3 ul li {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 19px; }
+      .footer #ocean_social-3 ul li a {
+        text-decoration: none;
+        font-size: 16px; }
+  .footer #footer-bottom {
+    font-family: Poppins;
+    text-align: center;
+    background-color: #17252A;
+    padding: 20px 0 12px 0;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 1; }
+
+.instagram-feed .instagram-box {
+  cursor: pointer; }
+  .instagram-feed .instagram-box h3 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 600;
+    font-size: 20px; }
+    .instagram-feed .instagram-box h3 i {
+      background-color: #333333;
+      color: white;
+      padding: 14px;
+      border-radius: 50%;
+      font-size: 22px; }
+.instagram-feed .insta-img {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  height: 268px;
+  background-image: url(https://elephantsnepal.com/wp-content/uploads/sb-instagram-feed-images/120302168_335681114533987_5534164053212591758_nfull.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  width: 25%;
+  transition: 0.3s; }
+  .instagram-feed .insta-img:hover {
+    opacity: 0.9; }
+.instagram-feed .insta-title {
+  position: relative;
+  text-align: center;
+  color: #172A19;
+  font-family: "Zilla Slab", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 60px; }
+  .instagram-feed .insta-title::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    left: 46%;
+    top: 55px;
+    background-color: #3AAFA9; }
+.instagram-feed .insta-b button {
+  font-family: "Zilla Slab", Sans-serif;
+  padding: 5px 15px;
+  background-color: #359DFF;
+  color: white;
+  opacity: 2;
+  outline: none;
+  font-size: 16px;
+  border: 0;
+  border-radius: 4px;
+  transition: 0.3s; }
+  .instagram-feed .insta-b button:hover {
+    opacity: 0.9; }
+@media only screen and (max-width: 600px) {
+  .instagram-feed .insta-img {
+    width: 100%; } }
+
+.FAQ {
+  margin-top: 120px;
+  font-family: "Poppins", Sans-serif;
+  margin-bottom: 70px;
+  font-weight: 400;
+  color: #FFFFFF; }
+  .FAQ .accordion-item {
+    margin-bottom: 10px; }
+  .FAQ .accordion-header {
+    background-color: #3AAFA9;
+    transition: 0.3s;
+    color: white;
+    transition: 0.3s; }
+    .FAQ .accordion-header:hover {
+      background-color: #2B7A78; }
+    .FAQ .accordion-header button {
+      color: white;
+      font-size: 14px; }
+  .FAQ .insta-title {
+    position: relative;
+    text-align: center;
+    color: #172A19;
+    font-family: "Zilla Slab", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 60px; }
+    .FAQ .insta-title::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      left: 46%;
+      top: 55px;
+      background-color: #3AAFA9; }
+  .FAQ .accordion-collapse {
+    color: #444444; }
+  .FAQ .accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #444444; }
+    .FAQ .accordion-button:not(.collapsed) i {
+      color: white !important; }
+  .FAQ .insta-b button {
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #3AAFA9;
+    padding: 6px 25px;
+    border-radius: 4px;
+    color: #ffffff;
+    border: 0px;
+    transition: all .2s ease-in-out; }
+    .FAQ .insta-b button:hover {
+      transform: scale(1.1);
+      background-color: #2B7A78; }
+
+.petition {
+  padding: 20px;
+  background-color: #5B3E71;
+  font-family: "Roboto", Sans-serif; }
+  .petition .insta-title {
+    position: relative;
+    top: -140px;
+    text-align: center;
+    color: #172A19;
+    font-family: "Zilla Slab", Sans-serif;
+    font-size: 30px !important;
+    font-weight: 600;
+    margin-bottom: 60px; }
+    .petition .insta-title::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      left: 46%;
+      top: 55px;
+      background-color: #3AAFA9; }
+  .petition h1 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .petition h3 {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .petition h4 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px; }
+  .petition button {
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ffff;
+    padding: 6px 25px;
+    border-radius: 4px;
+    color: #000000;
+    border: 0px;
+    transform: 0.3s; }
+    .petition button:hover {
+      background: #000000;
+      color: white; }
+  @media only screen and (max-width: 600px) {
+    .petition iframe {
+      width: 100%;
+      margin-top: 30px; } }
+
+.hotels {
+  margin-bottom: 200px;
+  font-family: "Poppins", Sans-serif; }
+  .hotels .hotel-elephants ul {
+    list-style: none; }
+    .hotels .hotel-elephants ul li {
+      margin-bottom: 40px;
+      color: #17252A;
+      font-family: "Poppins", Sans-serif;
+      font-size: 14px;
+      font-weight: 600; }
+      .hotels .hotel-elephants ul li i {
+        color: #BC5A5A;
+        font-size: 18px; }
+  .hotels .insta-title {
+    position: relative;
+    text-align: center;
+    color: #172A19;
+    font-family: "Zilla Slab", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 60px; }
+    .hotels .insta-title::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      left: 46%;
+      top: 55px;
+      background-color: #3AAFA9; }
+
+.slider {
+  margin-bottom: 150px; }
+  .slider .insta-title {
+    position: relative;
+    top: 35%;
+    text-align: center;
+    color: #172A19;
+    font-family: "Zilla Slab", Sans-serif;
+    font-size: 30px;
+    font-weight: 600; }
+    .slider .insta-title::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      left: 40%;
+      top: 120px;
+      background-color: #3AAFA9; }
+  .slider .carousel-control-next-icon, .slider .carousel-control-prev-icon {
+    color: #3AAFA9 !important;
+    font-weight: 700;
+    z-index: 999; }
+  .slider .carousel-item img {
+    opacity: 2; }
+  .slider .blink {
+    color: #BC5A5A;
+    animation: blink-animation 1s steps(5, start) infinite;
+    transition: 0.3s; }
+@keyframes blink-animation {
+  to {
+    visibility: hidden; } }
+  @media screen and (max-width: 480px) {
+    .slider .insta-title {
+      margin-top: -100px;
+      margin-bottom: 200px; } }
+
+/*# sourceMappingURL=style.css.map */
