@@ -65,7 +65,7 @@ body {
   position: relative;
   background: linear-gradient(90deg, #BBB8BB, #74706F); }
   .Front-page .parallax {
-    background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(/image/1_PcOOLbgE1nZgS4gGS7p1qg.jpg) repeat fixed 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(image/1_PcOOLbgE1nZgS4gGS7p1qg.jpg) repeat fixed 100%;
     background-size: cover;
     height: 100vh; }
     .Front-page .parallax .content {
